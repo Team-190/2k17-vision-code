@@ -1,7 +1,7 @@
 <grip:Pipeline>
   <sources>
     <grip:Camera>
-      <property name="address" value="http://roborio-190-frc.local:1181/?action=stream"/>
+      <property name="address" value="http://10.1.90.2:1181/?action=stream"/>
     </grip:Camera>
   </sources>
   <steps>
@@ -9,19 +9,19 @@
       <grip:Input step="0" socket="0"/>
       <grip:Input step="0" socket="1">
         <value>
-          <double>0.0</double>
-          <double>180.0</double>
+          <double>65.55755395683454</double>
+          <double>108.58361774744029</double>
         </value>
       </grip:Input>
       <grip:Input step="0" socket="2">
         <value>
-          <double>0.0</double>
+          <double>76.82104316546763</double>
           <double>255.0</double>
         </value>
       </grip:Input>
       <grip:Input step="0" socket="3">
         <value>
-          <double>78.53120046335813</double>
+          <double>47.316511197821406</double>
           <double>255.0</double>
         </value>
       </grip:Input>
@@ -96,7 +96,7 @@
         <value>0.0</value>
       </grip:Input>
       <grip:Input step="4" socket="11">
-        <value>1000.0</value>
+        <value>0.75</value>
       </grip:Input>
       <grip:Output step="4" socket="0" previewed="true"/>
     </grip:Step>
@@ -127,20 +127,20 @@
   </steps>
   <connections>
     <grip:Connection>
-      <grip:Output step="0" socket="0" previewed="true"/>
-      <grip:Input step="1" socket="0"/>
+      <grip:Output source="0" socket="0" previewed="true"/>
+      <grip:Input step="0" socket="0"/>
     </grip:Connection>
     <grip:Connection>
-      <grip:Output step="1" socket="0" previewed="false"/>
-      <grip:Input step="2" socket="0"/>
+      <grip:Output step="0" socket="0" previewed="true"/>
+      <grip:Input step="1" socket="0"/>
     </grip:Connection>
     <grip:Connection>
       <grip:Output step="3" socket="0" previewed="false"/>
       <grip:Input step="4" socket="0"/>
     </grip:Connection>
     <grip:Connection>
-      <grip:Output source="0" socket="0" previewed="true"/>
-      <grip:Input step="0" socket="0"/>
+      <grip:Output step="1" socket="0" previewed="false"/>
+      <grip:Input step="2" socket="0"/>
     </grip:Connection>
     <grip:Connection>
       <grip:Output step="2" socket="0" previewed="true"/>
